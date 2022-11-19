@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+total = 0
+
+i = 0
+while i < 10:
+   n = int(input())
+   if n < 0:
+      digit = n % -10 * - 1
+   elif n >= 0:
+      digit = n % 10
+   total = total + digit
+   i = i + 1
+
+print(total)
